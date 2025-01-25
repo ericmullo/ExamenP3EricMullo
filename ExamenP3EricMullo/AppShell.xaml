@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ExamenP3EricMullo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ExamenP3EricMullo.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="EricMulloP3">
+
+    <FlyoutItem Title="Examen P3">
+        <ShellContent
+            x:Name="ShellContent1_Eric"
+            Title="API Info"
+            ContentTemplate="{DataTemplate local:APIInfoPage}"
+            Route="APIInfoPage" />
+
+        <ShellContent
+            x:Name="ShellContent2_Eric"
+            Title="Eric Mullo"
+            ContentTemplate="{DataTemplate local:EricMullo}"
+            Route="Eric Mullo" />
+    </FlyoutItem>
+
+</Shell>
