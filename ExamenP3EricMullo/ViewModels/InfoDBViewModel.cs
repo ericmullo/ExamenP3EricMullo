@@ -37,7 +37,7 @@ namespace ExamenP3EricMullo.ViewModels
 
         public void GetAllAirports()
         {
-            airports = new ObservableCollection<SoporteModel>(App._airportRepository.GetAllAirports());
+            airports = new ObservableCollection<SoporteModel>(App.airportRepository.GetAllAirports());
             OnPropertyChanged(nameof(airports));
         }
 
